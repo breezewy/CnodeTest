@@ -47,7 +47,7 @@
                             loginname:post.author.loginname
                         }
                     }">
-                         <span>{{post.title}}</span>
+                         <span class="post_title">{{post.title}}</span>
                     </router-link>
                    
 
@@ -172,7 +172,7 @@ export default {
   }
 
   .allcount {
-    width: 70px;
+    width: 80px;
     display: inline-block;
     text-align: center;
     font-size: 12px;
@@ -220,6 +220,7 @@ export default {
   .toobar {
     height: 40px;
     background-color: #f5f5f5;
+    padding-left:8px;
   }
 
   .toobar .deactive {
@@ -253,6 +254,14 @@ export default {
     background:#80bd01;
     border-radius:3px;
     padding:3px 4px;
+  }
+  .post_title{
+    max-width:70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display: inline-block;
+    vertical-align: middle;
   }
 </style>
 
